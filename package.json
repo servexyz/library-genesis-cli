@@ -1,5 +1,5 @@
 {
-  "name": "node-repl",
+  "name": "cli-starter",
   "version": "1.0.0",
   "main": "cli.js",
   "license": "MIT",
