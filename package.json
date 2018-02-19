@@ -1,6 +1,6 @@
 {
   "name": "library-genesis-cli",
-  "version": "0.5.8",
+  "version": "0.5.9",
   "main": "cli.js",
   "license": "MIT",
   "repository": {
