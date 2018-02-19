@@ -7,28 +7,20 @@
 **Install**
 
 ```bash
-git clone git@github.com:servexyz/cli-starter myProjectName
+
 ```
 
 **Execute CLI**
 
 ```bash
-npm start
+
 ```
 
-**Execute CLI without Babel**
+## Goals
 
-```bash
-npm run dev
-```
-
-**Test CLI**
-
-```bash
-npm run test
-```
+* Implement [library-genesis](https://github.com/servexyz/library-genesis)
+* Make it easier to spawn dynamic boilerplates
 
 ## Related
 
-* [@sindresorhus/meow](https://github.com/sindresorhus/meow)
-* [@servexyz/npm-starter](https://github.com/servexyz/npm-starter)
+* [@servexyz/library-genesis](https://github.com/servexyz/library-genesis)

@@ -3,10 +3,12 @@
 const log = console.log;
 const meow = require("meow");
 const chalk = require("chalk");
+/*
 
-const pretty = (input, flags) => {
-  log(`input: ${input} \n ${flags}`);
-};
+const { myLibConfig } = require("./path/to/my-config.js");
+const { Library } = require("library-genesis");
+Library(myLibConfig).generate();
+*/
 let c = meow(
   `
     Usage
@@ -17,15 +19,27 @@ let c = meow(
 
       Examples
         $ respace -config my-config.js
-`,
-  {
-    flags: {
-      config: {
-        type: "string",
-        alias: "c"
-      }
-    }
-  }
+`
 );
-
-pretty(c.input[0], c.flags);
+function parse(config) {
+  const path = require("path");
+  const { Library } = require("library-genesis");
+  let { config } = require(path.join(process.cwd(), config));
+  try {
+    Library(config).generate();
+  } catch (err) {
+    log(`Failed to generate library. ${chalk.red(err)}`);
+  }
+}
+if (c.input.length === 1) {
+  log(`Correct length`);
+} else {
+  log(
+    `${chalk.yellow("-----------------------------------------")}
+I'm having difficult parsing your request. \n 
+Please type something like the following: \n 
+${chalk.green("libgen")} ${chalk.blue("./relative/path/to/config.js")}
+${chalk.yellow("-----------------------------------------")}
+  `
+  );
+}

@@ -1,5 +1,5 @@
 {
-  "name": "cli-starter",
+  "name": "library-genesis-cli",
   "version": "0.5.0",
   "main": "cli.js",
   "license": "MIT",
@@ -20,8 +20,8 @@
   },
   "scripts": {
     "start": "npm run build && npm run simple-start",
-    "simple-start": "./build/cli.js unicorns --rainbow",
-    "dev": "./cli.js unicorns --rainbow",
+    "simple-start": "./build/cli.js ./tests/sample.config.js",
+    "dev": "./cli.js foobar baz",
     "clean": "rm -rf build && mkdir build",
     "build-cli": "babel -d ./build ./cli.js -s",
     "build": "npm run clean && npm run build-cli",
@@ -40,6 +40,7 @@
     ]
   },
   "dependencies": {
-    "chalk": "^2.3.1"
+    "chalk": "^2.3.1",
+    "library-genesis": "^0.5.3"
   }
 }
