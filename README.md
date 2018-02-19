@@ -9,7 +9,7 @@
 **Install**
 
 ```bash
-yarn global add library-genesis-cli
+npm install -g library-genesis-cli
 ```
 
 **Execute CLI**
