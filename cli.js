@@ -21,10 +21,10 @@ let c = meow(
         $ respace -config my-config.js
 `
 );
-function parse(config) {
+function parse(configPath) {
   const path = require("path");
   const { Library } = require("library-genesis");
-  let { config } = require(path.join(process.cwd(), config));
+  let { config } = require(path.join(process.cwd(), configPath));
   try {
     Library(config).generate();
   } catch (err) {
@@ -32,7 +32,7 @@ function parse(config) {
   }
 }
 if (c.input.length === 1) {
-  log(`Correct length`);
+  parse(c.input[0]);
 } else {
   log(
     `${chalk.yellow("-----------------------------------------")}

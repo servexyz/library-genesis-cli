@@ -21,7 +21,7 @@
   "scripts": {
     "start": "npm run build && npm run simple-start",
     "simple-start": "./build/cli.js ./tests/sample.config.js",
-    "dev": "./cli.js foobar baz",
+    "dev": "./cli.js ./tests/sample.config.js",
     "clean": "rm -rf build && mkdir build",
     "build-cli": "babel -d ./build ./cli.js -s",
     "build": "npm run clean && npm run build-cli",
