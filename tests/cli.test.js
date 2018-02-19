@@ -8,10 +8,16 @@ test.before(t => {
   const output = path.join(__dirname, "./sandbox/output");
   fs.removeSync(output);
 });
+const chmod = require("chmod");
 
-test("CLI has execution permission", t => {
+test("Test CLI has execution permission", t => {
   const cli = path.join(__dirname, "../cli.js");
-  const chmod = require("chmod");
+  let modifiedCLI = chmod(cli, 777);
+  t.is(modifiedCLI, undefined);
+});
+
+test("Build CLI has execution permission", t => {
+  const cli = path.join(__dirname, "../build/cli.js");
   let modifiedCLI = chmod(cli, 777);
   t.is(modifiedCLI, undefined);
 });
