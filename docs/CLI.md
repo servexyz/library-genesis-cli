@@ -16,6 +16,12 @@ git clone git@github.com:servexyz/cli-starter myProjectName
 npm start
 ```
 
+**Execute CLI without Babel**
+
+```bash
+npm run dev
+```
+
 **Test CLI**
 
 ```bash
