@@ -9,3 +9,21 @@ test("CLI has execution permission", t => {
   let modifiedCLI = chmod(cli, 777);
   t.is(modifiedCLI, undefined);
 });
+
+test("Library-genesis generates files", t => {
+  /* 
+  NOTE: Currently forcing this test to pass because it's easy to visually check whether sandbox was generated. 
+  Would be nice to add fs.access to ensure that expected repositories are being cloned. 
+  TODO: Replicate test here and in repo-genesis
+  */
+  const exec = require("child_process").exec;
+  exec("./cli.js ./tests/sample.config.js", (error, stdout, stderr) => {
+    if (error) {
+      console.error(`exec error: ${error}`);
+      return;
+    }
+    console.log(`stdout: ${stdout}`);
+    console.log(`stderr: ${stderr}`);
+  });
+  t.pass();
+});
