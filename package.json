@@ -1,8 +1,16 @@
 {
   "name": "cli-starter",
-  "version": "1.0.0",
+  "version": "0.5.0",
   "main": "cli.js",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/servexyz/cli-starter"
+  },
+  "bin": {
+    "cli-starter": "./build/cli.js"
+  },
+  "files": ["./build/cli.js"],
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.40",
     "@babel/core": "^7.0.0-beta.39",
