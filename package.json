@@ -4,13 +4,19 @@
   "main": "cli.js",
   "license": "MIT",
   "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.40",
     "@babel/core": "^7.0.0-beta.39",
     "@babel/preset-env": "^7.0.0-beta.39",
     "ava": "^1.0.0-beta.1",
     "chmod": "^0.2.1"
   },
   "scripts": {
-    "start": "./cli.js unicorns --rainbow",
+    "start": "npm run build && npm run simple-start",
+    "simple-start": "./build/cli.js unicorns --rainbow",
+    "dev": "./cli.js unicorns --rainbow",
+    "clean": "rm -rf build && mkdir build",
+    "build-cli": "babel -d ./build ./cli.js -s",
+    "build": "npm run clean && npm run build-cli",
     "test": "ava"
   },
   "babel": {
