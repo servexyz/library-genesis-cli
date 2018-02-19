@@ -1,6 +1,6 @@
 {
   "name": "library-genesis-cli",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "main": "cli.js",
   "license": "MIT",
   "repository": {
@@ -10,7 +10,10 @@
   "bin": {
     "libgen": "./build/cli.js"
   },
-  "files": ["./cli.js", "./build/cli.js"],
+  "files": [
+    "./cli.js",
+    "./build/cli.js"
+  ],
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.40",
     "@babel/core": "^7.0.0-beta.39",
