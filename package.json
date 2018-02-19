@@ -8,11 +8,9 @@
     "url": "https://github.com/servexyz/cli-starter"
   },
   "bin": {
-    "libgen": "./build/cli.js"
+    "libgen": "./cli.js"
   },
-  "files": [
-    "./build/cli.js"
-  ],
+  "files": ["./cli.js"],
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.40",
     "@babel/core": "^7.0.0-beta.39",
