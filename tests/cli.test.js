@@ -3,6 +3,12 @@ import test from "ava";
 const log = console.log;
 const path = require("path");
 
+test.before(t => {
+  const fs = require("fs-extra");
+  const output = path.join(__dirname, "./sandbox/output");
+  fs.removeSync(output);
+});
+
 test("CLI has execution permission", t => {
   const cli = path.join(__dirname, "../cli.js");
   const chmod = require("chmod");
