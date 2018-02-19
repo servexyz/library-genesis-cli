@@ -1,19 +1,19 @@
-# CLI-Starter
+# library-genesis-cli
 
-> Meow-based CLI app starter
+> Convert config into library scaffolding
 
 ## Getting Started
 
 **Install**
 
 ```bash
-
+yarn global add library-genesis-cli
 ```
 
 **Execute CLI**
 
 ```bash
-
+libgen ./relative/path/to/config.js
 ```
 
 ## Goals
@@ -23,4 +23,9 @@
 
 ## Related
 
-* [@servexyz/library-genesis](https://github.com/servexyz/library-genesis)
+* `@servexyz/library-genesis`
+
+  > [@github](https://github.com/servexyz/library-genesis) | [@npm](https://npmjs.com/package/library-genesis)
+
+* `@servexyz/library-genesis-example`
+  > [@github](https://github.com/servexyz/library-genesis-example)

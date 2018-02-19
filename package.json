@@ -8,7 +8,7 @@
     "url": "https://github.com/servexyz/cli-starter"
   },
   "bin": {
-    "cli-starter": "./build/cli.js"
+    "libgen": "./build/cli.js"
   },
   "files": [
     "./build/cli.js"
