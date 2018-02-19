@@ -3,12 +3,7 @@
 const log = console.log;
 const meow = require("meow");
 const chalk = require("chalk");
-/*
 
-const { myLibConfig } = require("./path/to/my-config.js");
-const { Library } = require("library-genesis");
-Library(myLibConfig).generate();
-*/
 let c = meow(
   `
     Usage
@@ -21,6 +16,7 @@ let c = meow(
         $ respace -config my-config.js
 `
 );
+
 function parse(configPath) {
   const path = require("path");
   const { Library } = require("library-genesis");

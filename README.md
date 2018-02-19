@@ -4,6 +4,8 @@
 
 [![Build Status](https://travis-ci.org/servexyz/library-genesis-cli.svg?branch=master)](https://travis-ci.org/servexyz/library-genesis-cli)
 
+**Currently not working when installed globally. Build issue. Only works when running from repo / npm linking. Will remove this when resolved**
+
 ## Getting Started
 
 **Install**
