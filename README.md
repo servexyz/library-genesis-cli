@@ -2,6 +2,8 @@
 
 > Convert config into library scaffolding
 
+[![Build Status](https://travis-ci.org/servexyz/library-genesis-cli.svg?branch=master)](https://travis-ci.org/servexyz/library-genesis-cli)
+
 ## Getting Started
 
 **Install**
