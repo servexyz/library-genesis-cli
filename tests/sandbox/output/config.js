@@ -1,1 +1,1 @@
-/Users/alechp/Code/servexyz/library-genesis/cli/tests/sandbox/templates/sample.template.js
+/Users/alechp/Code/servexyz/genesis/.repositories/library-genesis-cli/tests/sandbox/templates/sample.template.js
