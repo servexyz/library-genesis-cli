@@ -30,7 +30,9 @@
     "chmod-build": "chmod 777 ./build/cli.js",
     "build-cli": "babel -d ./build ./cli.js -s",
     "build": "npm run clean && npm run build-cli",
-    "test": "ava"
+    "test": "ava",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "babel": {
     "presets": [
@@ -47,6 +49,8 @@
   "dependencies": {
     "chalk": "^2.3.1",
     "library-genesis": "^0.5.3",
-    "meow": "^4.0.0"
-  }
+    "meow": "^4.0.0",
+    "snyk": "^1.193.1"
+  },
+  "snyk": true
 }
