@@ -6,3 +6,8 @@ patch:
   SNYK-JS-LODASH-450202:
     - library-genesis > file-genesis > lowdb > lodash:
         patched: '2019-07-12T18:32:51.341Z'
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - snyk > proxy-agent > https-proxy-agent:
+        patched: '2019-10-04T03:43:19.352Z'
+    - snyk > proxy-agent > pac-proxy-agent > https-proxy-agent:
+        patched: '2019-10-04T03:43:19.352Z'
